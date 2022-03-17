@@ -1,0 +1,126 @@
+*
+,*::after
+,*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --soft_blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    --very_dark_blue: hsl(217, 54%, 11%);
+    --very_dark_blue_card: hsl(216, 50%, 16%);
+    --very_dark_blue_line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color: var(--soft_blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-family: Outfit;
+    font-weight: 400;
+    background-color: var(--very_dark_blue);
+}
+
+.card {
+    border-radius: 1rem;
+    width: 350px;
+    padding: 20px;
+    background-color: var(--very_dark_blue_card);
+}
+
+
+.hero_title {
+    color: var(--white);
+    font-size: 1.3rem;
+}
+
+.hero_img {
+    border-radius: 1rem;
+    width: 300px;
+    height: 300px;
+    background-image: url("./images/image-equilibrium.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+.hero_view {
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.sale {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.icon_ethereum {
+    background-image: url("./images/icon-ethereum.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1rem;
+    height: 1rem;
+}
+.icon_clock {
+    background-image: url("./images/icon-clock.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1rem;
+    height: 1rem;
+    margin-left: auto;
+    margin-right: .5rem;
+}
+.price {
+    color: var(--cyan);
+    font-weight: 600;
+}
+
+
+hr {
+    height: 1px;
+    color: var(--very_dark_blue_line);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: -5px;
+}
+.footer_img {
+    height: 2rem;
+    border: 1px solid var(--white);
+    border-radius: 100px;
+}
+
+.creator {
+    color: var(--white);
+    font-weight: 300;
+}
+
+
+.hero_title:hover,
+.creator:hover,
+.hero_img:hover {
+    cursor: pointer;
+    color: var(--cyan);
+}
+
+.hero_img:hover {
+    background-image: url("./images/image-equilibrium.jpg");
+    z-index: 1;
+}
