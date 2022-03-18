@@ -34,6 +34,7 @@ body {
     width: 350px;
     padding: 20px;
     background-color: var(--very_dark_blue_card);
+    box-shadow: 0 8px 8px 0 black;
 }
 
 
@@ -136,4 +137,5 @@ hr {
 
 .hero_img:hover {
     z-index: 1;
+    transition: 2s;
 }
